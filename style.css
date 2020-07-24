@@ -1,0 +1,164 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+/*   margin: 2em; */
+  font-family: "-apple-system", "Helvetica", sans-serif;
+}
+
+/*img {
+  height: 500px;
+  width: 100%;
+} */
+
+.center {
+  text-align: center;
+  color: #627C85;
+}
+
+nav {
+  background-color: #A2E8DD;
+  color: #32DE8A;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+button {
+  background-color: #A2E8DD;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+/*   margin: 2em; */
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+.indeximg {
+  position: relative;
+  opacity: 0.99;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.the-scientist.com/assets/articleNo/66864/aImg/35078/foresttb-l.jpg");
+  min-height: 100%;
+}
+
+/*DONATE PAGE*/
+.bgimg-1 {
+  position: relative;
+  opacity: 0.99;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://sensusjournal.files.wordpress.com/2019/12/greenwashing.jpg?w=694");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  position: relative;
+  opacity: 0.80;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.sustainability-times.com/wp-content/uploads/thumbs/AdobeStock_125820453-371em3glhplo2v4kc8jvuo.jpg");
+  min-height: 100%;
+}
+.bgimg-3 {
+  position: relative;
+  opacity: 0.80;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://wallpapercave.com/wp/93jZ2D6.jpg");
+  min-height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgimg-4 {
+  position: relative;
+  opacity: 0.99;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://image.jimcdn.com/app/cms/image/transf/none/path/s4d03b38da1738569/backgroundarea/i82d701e7423f9d46/version/1574945238/image.jpg");
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.card{
+  border-color: #fff;
+  opacity: 0.8;
+}
+.card-img-top{
+  display: flex;
+  height: 200px;
+  padding-bottom: 10px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #A2E8DD;
+  border-radius: 10px;
+      }
+.iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* END OF DONATE PAGE*/

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <div class="container-fluid">
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="//fonts.googleapis.com/css?family=Open+Sans"
+      />
+    </div>
+    <title>Endangered Animals</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="animal.js"></script>
+    <style>
+                  h1 {
+                    text-align: center;
+                    background-color: #A2E8DD;
+                    font-size: 80px;
+                    border-radius: 10px;
+                    border: 5px dotted #35524A;
+                  }
+                  body {
+                    font-family: "Open Sans";
+                  }
+                  img {
+                    object-fit: cover;
+                    height: 50vh;
+                    flex-wrap: wrap;
+                  }
+                  .card {
+                    display: flex;
+                    display: inline-block;
+                  }
+                  html,body {
+                      height: 100%;
+                    }
+
+                    .wrapper {
+                      height: 100%;
+                      line-height: 1.5;
+                      word-spacing: 4px;
+                      letter-spacing: 1px;
+                    }
+
+                    .fixed-bg {
+                      background-attachment: fixed;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center center;
+                      height: 100%;
+                      width: 100%;
+                      color: white;
+                      text-align: center;
+                      display: table;
+                    }
+
+                    .fixed-bg h2 {
+                      display: table-cell;
+                      vertical-align: middle;
+                    }
+
+                    .scroll-bg {
+                      background-color: #627C85;
+                      padding: 10px 70px;
+                      color: #676767;
+                    }
+
+                    .whole-cards-one {
+                      display: flex;
+                      justify-content: space-around;
+                      align-items;
+                      padding: 20px;
+                      color: #000000;
+                    }
+                    .ripple {
+                      border-radius: 20px;
+                      background: linear-gradient(90deg, #0162c8, #55e7fc)
+                    }
+            span:hover {
+              animation: animate 1s linear infinite;
+            }
+            @keyframes animate {
+              0%
+              {
+                width: 0px;
+                height: 0px;
+                opacity: 0.5;
+              }
+              100%
+              {
+                width: 50px;
+                height: 50px;
+                opacity: 0.5;
+              }
+            }
+            .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+
+      }
+            .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+      <a class="navbar-brand" href="#">Enlite</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="2.pollution.html">Pollution</a>
+          <a class="nav-item nav-link" href="2.animal.html">Animals</a>
+          <a class="nav-item nav-link" href="2.donate.html">Donate</a>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <div class="wrapper">
+      <!-- wrapper div starts -->
+
+      <div
+        class="fixed-bg"
+        style="background-image: url('https://i.pinimg.com/originals/8d/80/c7/8d80c74c3acd83a03cfa994ea9f6004c.jpg');"
+      >
+        <div class="caption">
+          <span class="border">ENDANGERED ANIMALS</span>
+        </div>
+        
+      </div>
+
+      <div class="scroll-bg">
+        <h3
+          style="color: #fff; background-color: #35524A; text-align: center; padding: 20px"
+        >
+          Countless rare, exotic animals are being threatened to extinction. For
+          example, the California grizzly bear was on the endangered status, but
+          hunters kept on hunting them down for their valuable fur. Soon, they
+          became extinct. Being knowledgeable about these amazing animals and
+          possibly being able to support them is just one step closer to getting
+          these animals thriving again.
+        </h3>
+      </div>
+      <div class="scroll-bg">
+        <h3 style="color: #fff; text-align: center">
+          Donate Links:
+        </h3>
+        <a
+          style="display: flex; display: block; width: 40% justify-content: center; margin-left: 30%; margin-right: 30%;"
+          href="https://www.iucn.org/support"
+          class="btn btn-primary ripple"
+          >The International Union for Conservation of Nature (IUCN)</a
+        >
+        <br />
+        <a
+          style="display: flex; display: block; width: 40% justify-content: center; margin-left: 30%; margin-right: 30%;"
+          href="https://secure2.convio.net/jgi/site/Donation2;jsessionid=00000000.app20121a?idb=1314276278&DONATION_LEVEL_ID_SELECTED=1&df_id=2522&mfc_pref=T&2522.donation=form1&NONCE_TOKEN=EEE04998FFE10FE0669AAF35D4C071B6&idb=0"
+          class="btn btn-primary ripple"
+          >The Jane Goodall Institute</a
+        >
+        <br />
+        <a
+          style="display: flex; display: block; width: 40% justify-content: center; margin-left: 30%; margin-right: 30%;"
+          href="https://www.darwinfoundation.org/en/donate"
+          class="btn btn-primary ripple"
+          >The Charles Darwin Foundation</a
+        >
+        <br />
+        <a
+          style="display: flex; display: block; width: 40% justify-content: center; margin-left: 30%; margin-right: 30%;"
+          href="https://www.worldanimalprotection.org.uk/get-involved/donate?ctrk=header_donatebtn_2"
+          class="btn btn-primary ripple"
+          >The World Animal Protection</a
+        >
+        <br />
+        <a
+          style="display: flex; display: block; width: 40% justify-content: center; margin-left: 30%; margin-right: 30%;"
+          href="https://www.wildlifevetsinternational.org/donate"
+          class="btn btn-primary ripple"
+          >Wildlife Vet International</a
+        >
+        <br />
+        <a
+          style="display: flex; display: block; width: 40% justify-content: center; margin-left: 30%; margin-right: 30%;"
+          href="https://www.internationalanimalrescue.org/donate?currency=USD"
+          class="btn btn-primary ripple"
+          >The International Animal Rescue</a
+        >
+      </div>
+
+      <script>
+        const buttons = document.querySelectorAll("a");
+        buttons.forEach(btn => {
+          btn.addEventListener("click", function(e) {
+            let x = e.clientX - e.target.offsetLeft;
+            let y = e.clientY - e.target.offsetTop;
+
+            let ripples = document.createElement("span");
+            ripples.style.left = x + "px";
+            ripples.style.top = y + "px";
+            this.appendChild(ripples);
+
+            setTimeOut(() => {
+              ripples.remove();
+            }, 1000);
+          });
+        });
+      </script>
+      <div
+        class="whole-cards fixed-bg"
+        style="background-image: url('https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');"
+      >
+        <div class="whole-cards-one">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1566489564594-f2163930c034?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Amur Leopard"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Amur Leopard</h5>
+              <p class="card-text">
+                Amur Leopards are the most endangered leopards. Native to China
+                and Russia, these extraordinary animals can run at 37 mph and
+                leap over 10 feet. They are important because they benefit other
+                species such as Amur tigers.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Black Rhino"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Black Rhino</h5>
+              <p class="card-text">
+                Black rhinos have a special hooked upper lip, which
+                differentiates from other rhinos. The population significantly
+                dropped in recent years due to high activity from poachers and
+                hunters. The rhino horn is an especially prized item, and
+                poachers often sell them on the black market.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1535825927885-7ddf4adebf6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="blue whale"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Blue Whale</h5>
+              <p class="card-text">
+                Blue whales are the largest (and loudest) animals on earth. They
+                weigh about 200 tons and can be heard from hundreds of miles
+                away. A significance is that they are the top predator on the
+                food chain, but are targeted from commercial whaling.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1551986781-2f5b76ad4a88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Galápagos Penguin"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Galápagos Penguin</h5>
+              <p class="card-text">
+                As their name suggests, Galápagos Penguins only live on the
+                Galápagos. They are the only species of penguins that live in
+                the northern hemisphere. Unfortunately, pollution and climate
+                change are threats to these birds and nonnative species, such as
+                cats, can kill them.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="whole-cards-one">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1558724483-0a9d17b1defc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Golden Lion Tamarin"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Golden Lion Tamarin</h5>
+              <p class="card-text">
+                Golden Lion Tamarins have beautiful manes that look like lions,
+                and having a large mane makes their face, limbs, and tail look
+                small. They are the closest relative to monkeys. The forests in
+                Brazil in which they live are being cut down and reduced due to
+                agriculture.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1548375044-6797a0c71799?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Humphead Wrasse"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Humphead Wrasse</h5>
+              <p class="card-text">
+                Humphead wrasses are huge coral reef fishes. They may be as
+                large as six feet, and are famous for its hump on its forehead.
+                Overfishing is the main concern. With fishermen spraying cyanide
+                (a poisonous chemical) into the corals, they are forced to hide
+                and are captured.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1575590364024-614acdbcbcfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Spider Monkey"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spider Monkey</h5>
+              <p class="card-text">
+                Spider monkeys are monkeys with long, slim arms and legs, and
+                live in rainforests in the Americas. Their powerful tails allow
+                them to swing in between branches easily. Predators naturally
+                hunt for their eggs, but humans cutting down their habitat is an
+                even greater threat.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1547399300-7613d8f5f8f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Asian Elephant"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Asian Elephant</h5>
+              <p class="card-text">
+                Asian elephants are huge animals, although a bit smaller than
+                the African elephants. They have declined by over 50% in the
+                past century, due to habitat conflicts between humans and
+                elephants. Similarly to African elephants, they are also being
+                poached for their valuable ivory.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="whole-cards-one">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1533725920959-5cd2c514d898?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Chimpanzee"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chimpanzee</h5>
+              <p class="card-text">
+                Chimpanzees are very close to humans, in fact, we share many
+                DNAs with them! They are also related to apes, but not to
+                monkeys because chimps don't have tails. Sadly, chimpanzees are
+                being captured as well as their habitats being deforested.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.pexels.com/photos/4344887/pexels-photo-4344887.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              class="card-img-top"
+              alt="Atlantic sturgeon
+"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Atlantic sturgeon</h5>
+              <p class="card-text">
+                Atlantic sturgeons live in the ocean between Maine and Florida.
+                They have rows of visible bone just underneath the scales, a
+                pointy tail, and can get as long as fourteen feet! Overfishing
+                and habitat loss is the main reason why these fish are
+                disappearing.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1572913385790-b28d5d561081?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Galápagos Sea Lion"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Galápagos Sea Lion</h5>
+              <p class="card-text">
+                Galápagos Sea Lions live on the Galápagos, and have thick necks
+                and bodies. The only difference from other sea lions is that
+                they have a pointy nose. El Nino, or severe global warming,
+                contributes to these sea lions not wanting to reproduce.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1571593530682-ab38f617daa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Anjouan Sparrowhawk"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Anjouan Sparrowhawk</h5>
+              <p class="card-text">
+                The Anjouan Island sparrowhawk is a rare, smaller subspecies of
+                the Frances sparrowhawk. They have white bellies and gray
+                feathers. They are threatened by hunting and habitat loss, and
+                many explorers have no luck finding this special bird.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="whole-cards-one">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mascarene_Swiftlet.jpg/1200px-Mascarene_Swiftlet.jpg"
+              class="card-img-top"
+              alt="Mariana gray swiftlet"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mariana gray swiftlet</h5>
+              <p class="card-text">
+                The Mariana gray swiftlet is a small bird, with grey wings and
+                brown undersides. They live in caves and reproduce once a year.
+                Caves in southern Guam are where they live, but after World War
+                II, they disappeared, so they were relocated to O'ahu.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1591630866811-eceedf667541?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Giant panda"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Giant panda</h5>
+              <p class="card-text">
+                Giant pandas are famous for black fur around their eyes, arms,
+                and legs, and a big, white body. They live on the damp,
+                mountainous parts of mainland China consuming lots of bamboo. In
+                the 1990s, much bamboo died and as a result, pandas starved.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1571593530682-ab38f617daa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="St. Croix ground lizard"
+            />
+            <div class="card-body">
+              <h5 class="card-title">St. Croix ground lizard</h5>
+              <p class="card-text">
+                St. Croix ground lizards are tiny lizards that live in shrubbery
+                and woodland areas. They have a long tail, orange neck, and
+                brown body. They used to live in St. Croix, but with invasive
+                species and habitat shifts, these lizards are in danger.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1562619040-f2d243f0b243?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="Sonoran pronghorn"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sonoran pronghorn</h5>
+              <p class="card-text">
+                Sonoran pronghorns are a subspecies of pronghorns, and they live
+                in the Sonoran desert. They are notable for their horns that
+                point backwards. Sensitive to loud noises, fear drives them to
+                run away. Monsoons will solely dry weather which has decreased
+                their population.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-bg">
+        <h3
+          style="color: #fff; background-color: #35524A; text-align: center; padding: 20px"
+        >
+          In conclusion, we must start taking the baby steps to help save these
+          precious creatures. Just like humans, they are a huge part of Mother
+          Nature.
+        </h3>
+      </div>
+    </div>
+    <!-- wrapper div ends-->
+  </body>
+</html>
